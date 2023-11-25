@@ -1,0 +1,22 @@
+
+body{
+    background-color: rgb(105, 105, 174);
+}
+.homepage{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    background-color: greenyellow;
+    color: aliceblue;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}

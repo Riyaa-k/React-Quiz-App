@@ -1,0 +1,84 @@
+
+ /* code defines the styling for a quiz game.  */
+
+/* The parent div has a padding of 0 80px. */
+.parentdiv{
+    padding: 0 80px;
+}
+
+/* The game container has a white background, black text, and is centered. */
+.game-container{
+    background-color: #fff;
+    color: black;
+    padding: 0 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The game container has a fixed width and height. */
+.game-container{
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 1200px;
+    height: 600px;
+}
+
+/* The question container has a margin bottom of 50px. */
+.question-container{
+    margin-bottom: 50px;
+}
+
+/* The question number is positioned to the left of the screen. */
+.question-number{
+    margin-left: -65vw;
+    padding-top: 40px;
+}
+
+/* The option container has a margin bottom of 30px. */
+.option-container{
+    margin-bottom: 30px;
+}
+
+/* Each option is styled with a fixed width, height, and background color. */
+.options{
+    width: 400px;
+    height: 50px;
+    background-color: #1DA1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* The option parent container has a display of flex and a column-gap of 100px. */
+.option-parent{
+    display: flex;
+    column-gap: 100px;
+    margin-top: 40px;
+}
+
+/* The button container has a margin top of 30px and a display of flex with a gap of 30px. */
+.button-container{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+/* The Previous, Next, and Quit buttons have different background colors. */
+.Previous{
+    background-color: #3E7DAA;
+}
+
+.Next{
+    background-color: green;
+}
+
+.Quit{
+    background-color: red;
+}
+/*DELIMITER*/
+/*DELIMITER*/This CSS code provides a clean and concise styling for a quiz game. The comments in the code explain the purpose of each section and provide additional clarity..</s>
