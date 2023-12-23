@@ -1,9 +1,27 @@
-import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import "../styles/result.css"
 
-export default class Result extends Component {
-  render() {
-    return (
+
+
+const Result = () => {
+  const [totalCorrectAnswers, setTotalCorrectAnswers] = useState(0);
+  const [totalWrongAnswers, setTotalWrongAnswers] = useState(0);
+  const [totalAttemptedQuestions, setTotalAttemptedQuestions] = useState(0);
+
+  useEffect(() => {
+    // Retrieve values from localStorage
+    const correctAnswers = localStorage.getItem("totalCorrectAnswers");
+    const wrongAnswers = localStorage.getItem("totalWrongAnswers");
+    const attemptedQuestions = localStorage.getItem("totalAttemptedQuestions");
+
+    // Set the retrieved values in state
+    setTotalCorrectAnswers(correctAnswers || 0);
+    setTotalWrongAnswers(wrongAnswers || 0);
+    setTotalAttemptedQuestions(attemptedQuestions || 0);
+  }, []);
+
+return (
       <>
         <div className='result'>
         <h3>Result</h3>
@@ -22,15 +40,21 @@ export default class Result extends Component {
                 <p>Number of wrong answers</p>
                 </div>
                 <div>
-                <p>15</p>
-                <p>9</p>
-                <p>3</p>
-                <p>6</p>
+                <p>{totalCorrectAnswers}</p>
+                <p>{totalAttemptedQuestions}</p>
+                <p>{totalCorrectAnswers}</p>
+                <p>{totalWrongAnswers}</p>
                 </div>
             </div>
             <div className="result-buttons">
+            <NavLink to="/quiz">
             <button className="play-again">Play Again</button>
-            <button className="play-again">Back to Home</button>
+            </NavLink>
+           
+           <NavLink to='/'>
+           <button className="play-again">Back to Home</button>
+           </NavLink>
+           
             </div>
         
             
@@ -40,4 +64,4 @@ export default class Result extends Component {
       </>
     )
   }
-}
+  export default Result

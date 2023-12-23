@@ -1,6 +1,6 @@
 .result {
     width: 100vw;
-    color: green;
+    color: rgb(186, 244, 186);
     text-align: center;
   }
   
@@ -19,10 +19,9 @@
   }
   
   .result-buttons{
-      display: flex;
-      justify-content: center;
-      padding-top: 30px;
-      margin: auto;
-      width: 100vw;
-      gap: 30px;
+    
+      display:flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+      
   }
